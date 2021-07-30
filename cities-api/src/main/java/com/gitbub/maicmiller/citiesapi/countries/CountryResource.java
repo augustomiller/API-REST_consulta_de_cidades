@@ -1,4 +1,4 @@
-package com.gitbub.maicmiller.citiesapi;
+package com.gitbub.maicmiller.citiesapi.countries;
 
 import com.gitbub.maicmiller.citiesapi.countries.Country;
 import com.gitbub.maicmiller.citiesapi.repository.CountryRepository;
