@@ -1,4 +1,4 @@
-package com.gitbub.maicmiller.citiesapi.staties;
+package com.gitbub.maicmiller.citiesapi.states;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -6,9 +6,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-public class StateResource {
     @RestController
-    @RequestMapping("/staties")
+    @RequestMapping("/states")
     public class StateResource {
 
         private final StateRepository repository;
@@ -22,4 +21,3 @@ public class StateResource {
             return repository.findAll();
         }
     }
-}
