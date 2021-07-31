@@ -1,4 +1,4 @@
-package com.gitbub.maicmiller.citiesapi.staties;
+package com.gitbub.maicmiller.citiesapi.states;
 
 import com.gitbub.maicmiller.citiesapi.countries.Country;
 import org.hibernate.annotations.Type;
@@ -8,13 +8,12 @@ import org.hibernate.annotations.TypeDefs;
 import javax.persistence.*;
 import java.util.List;
 
-public class State {
     @Entity(name = "State")
     @Table(name = "estado")
     @TypeDefs({
             @TypeDef(name = "jsonb", typeClass = JsonBinaryType.class)
     })
-    public static class State {
+    public class State {
 
         @Id
         private Long id;
